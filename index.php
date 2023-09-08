@@ -1,12 +1,12 @@
 <?php
     # Setting the required params for the endpoints
 if (
-    isset($_GET['Praise-Ebuka']) &&
+    isset($_GET['slack_name']) &&
     isset($_GET['current_day']) &&
     isset($_GET['utc_time']) &&
     isset($_GET['track']) &&
-    isset($_GET['https://github.com/Praisebuka/Zuri-s-Training/blob/main/index.php']) &&
-    isset($_GET['https://github.com/Praisebuka/Zuri-s-Training']) &&
+    isset($_GET['github_file_url']) &&
+    isset($_GET['github_repo_url']) &&
     isset($_GET['status_code'])
 ) {
     #Getting the values and sending them to a variable 
@@ -47,5 +47,3 @@ if (
 }
 ?>
 
-        <!-- Testing -->
-<!-- https://zuriways.vercel.app/?slack_name=praise_ebuka&current_day=Monday&utc_time=2023-08-21T15:04:05Z&track=backend&github_file_url=https://github.com/Praisebuka/Zuri-s-Training/blob/main/index.php&github_repo_url=https://github.com/Praisebuka/Zuri-s-Training&status_code=200 -->
