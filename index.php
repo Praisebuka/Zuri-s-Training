@@ -35,11 +35,11 @@ if (
     # Sending the responose from the array
     // dd($response);
     echo json_encode($response);
-} else {
-    #Throwing an error if any params are missing.
-    $response = array(
-        'error' => 'Please make sure that all required fields are filled.'
-    );
+ }   //else {
+//     #Throwing an error if any params are missing.
+//     $response = array(
+//         'error' => 'Please make sure that all required fields are filled.'
+//     );
 
     header('Content-Type: application/json');
 
