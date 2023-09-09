@@ -1,12 +1,12 @@
-
+<?php
 date_default_timezone_set('UTC');
 header('Content-Type: application/json');
 if (isset($_GET['slack_name']) && isset($_GET['track'])) {
     $slackName = $_GET['slack_name'];
     $track = $_GET['track'];
  
-    $githubFileURL = 'https://github.com/Praisebuka/Zuri-s-Training/edit/main/api.php';
-    $githubSourceURL = 'https://github.com/dayveed12345/hng-intern';
+    $githubFileURL = 'https://github.com/Praisebuka/Zuri-s-Training/blob/main/api.php';
+    $githubSourceURL = 'https://github.com/Praisebuka/Zuri-s-Training';
 
     $utcDateTime = gmdate('Y-m-d\TH:i:s\Z');
     $currentDay = date('l');
@@ -27,3 +27,4 @@ _of_week' => $currentDay,
     echo json_encode(['error' => 'Missing required parameters']);
     http_response_code(400);
 }
+?>
