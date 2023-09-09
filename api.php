@@ -1,4 +1,5 @@
 <?php
+
 date_default_timezone_set('UTC');
 header('Content-Type: application/json');
 if (isset($_GET['slack_name']) && isset($_GET['track'])) {
@@ -12,12 +13,11 @@ if (isset($_GET['slack_name']) && isset($_GET['track'])) {
     $currentDay = date('l');
     $response = [
         'slack_name' => $slackName,
-        'day_
-_of_week' => $currentDay,
+        'current_day' => $currentDay,
         'utc_time' => $utcDateTime,
         'track' => $track,
         'github_file_url' => $githubFileURL,
-        'github_source_url' => $githubSourceURL,
+        'github_repo_url' => $githubSourceURL,
         'status_code' => 200,
     ];
 
